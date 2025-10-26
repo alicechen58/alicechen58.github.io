@@ -1,20 +1,30 @@
 ---
-title: "Teaching experience 1"
+title: "Teaching & Mentorship Experience"
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+type: "Research Training"
+permalink: /teaching/teaching-mentorship
+venue: "University of California, Irvine"
+date: 2025-01-01
+location: "Irvine, CA, USA"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+## Research Training & Mentorship
 
-Heading 1
-======
+As Lab Manager at the Trauma and Resilience Lab, I have had the opportunity to train and mentor undergraduate research assistants in research methods, data collection procedures, and ethical research practices.
 
-Heading 2
-======
+### Training Activities
 
-Heading 3
-======
+**Research Assistant Onboarding & Training**
+- Interviewed and trained 7 research assistants on lab standard operating procedures
+- Taught proper use of actigraphy equipment, saliva collection procedures, and data collection tools (REDCap)
+- Supervised research assistants in participant recruitment and screening
+
+**Skills Taught:**
+- Ethical research practices and informed consent procedures
+- Psychophysiological data collection methods
+- Database management and data quality assurance
+- Literature review and systematic data extraction
+
+---
+
+*As I continue my academic career, I look forward to expanding my teaching and mentorship activities. This page will be updated with additional teaching experiences.*

@@ -10,10 +10,15 @@
 1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
 1. Set site-wide configuration and add your content.
 1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
+1. **Enable GitHub Actions deployment**: Go to repository Settings → Pages → Build and deployment → Source: select "GitHub Actions"
+1. Push your changes - the site will automatically build and deploy!
 1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
 
 See more info at https://academicpages.github.io/
+
+## 🚀 Automatic Deployment
+
+This site uses **GitHub Actions** for push-to-publish automation. Every commit to `master` automatically builds and deploys your site to GitHub Pages. See [.github/DEPLOYMENT.md](.github/DEPLOYMENT.md) for setup instructions and troubleshooting.
 
 ## Running locally
 
@@ -70,6 +75,76 @@ You should now be able to access the website from `localhost:4000`.
 ### Using the DevContainer in VS Code
 
 If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+
+# Where Do I Edit Each Thing?
+
+This site is built on Jekyll with the academicpages structure. Here's a quick reference guide for where to edit different aspects of your site.
+
+## Site-wide Settings
+
+**`_config.yml`** — Title, tagline, email, description, social links, collections, and other global options.
+
+**`_data/navigation.yml`** — Top navigation menu labels and links. Keep all links even if the page is empty.
+
+## Home & Profile
+
+**`_pages/about.md`** — Bio, headshot image path, quick links to CV, email, and socials.
+
+**`images/`** — Headshot and other images used on pages.
+
+## CV
+
+**`files/alice-chen-cv.pdf`** — Upload your CV PDF here; link to it from About and nav. The repo serves files from `files/`.
+
+## Publications
+
+**`_publications/*.md`** — One file per publication/preprint/in-prep item.
+
+**`markdown_generator/`** — Optional scripts/TSV to auto-generate publication markdown.
+
+## Talks & Posters
+
+**`_talks/*.md`** — One file per talk/poster (APS, UROP, etc.).
+
+**`_pages/talks.md`** — List page that renders the collection.
+
+## Research
+
+**`_pages/research.md`** — Overview page describing research experience across labs.
+
+## Teaching
+
+**`_pages/teaching.md`** — Overview page.
+
+**`_teaching/*.md`** — Individual course entries (keep files/pages even if empty for now).
+
+## Portfolio / Projects
+
+**`_portfolio/*.md`** — Cards for projects or labs (e.g., Trauma & Resilience Lab, DAWN study, Silver Lab).
+
+**`_pages/portfolio.md`** — List page.
+
+## Blog / News
+
+**`_posts/YYYY-MM-DD-title.md`** — Blog/news posts. Use this date-filename format for correct sorting.
+
+## Service & Awards
+
+**`_pages/service.md`** — Campus/community roles (WISE, Crisis Text Line, Caring Minds).
+
+**`_pages/awards.md`** — Scholarships, honors, awards. Keep both pages present even if incomplete.
+
+## Assets
+
+**`files/`** — PDFs and other downloadable files.
+
+**`images/`** — All images referenced across pages.
+
+## Keep Everything Visible
+
+Do not delete pages or remove nav items. If a section is not yet populated, leave its page and link intact and add a short placeholder note. This preserves the full structure of the academic portfolio template while you build out content over time.
+
+---
 
 # Maintenance
 
