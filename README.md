@@ -1,26 +1,53 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Yuekun (Alice) Chen - Academic Website
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
+Personal academic website for Yuekun (Alice) Chen, showcasing research, publications, and professional experience in psychological science and sociology.
 
-# Getting Started
+**🌐 Live Site:** [https://alicechen58.github.io](https://alicechen58.github.io)
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. **Enable GitHub Actions deployment**: Go to repository Settings → Pages → Build and deployment → Source: select "GitHub Actions"
-1. Push your changes - the site will automatically build and deploy!
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+## About
 
-See more info at https://academicpages.github.io/
+I'm a graduating senior at the University of California, Irvine, earning dual Bachelor of Arts degrees in Psychological Science (Cum Laude) and Sociology (Magna Cum Laude) with a cumulative GPA of 3.95/4.00.
 
-## 🚀 Automatic Deployment
+My research focuses on:
+- Trauma and resilience across diverse populations
+- Post-traumatic stress disorder (PTSD) and treatment outcomes
+- Mental health in high-stress occupations
+- Cultural adaptation of mental health interventions
+- Sleep patterns and circadian rhythms in trauma survivors
 
-This site uses **GitHub Actions** for push-to-publish automation. Every commit to `master` automatically builds and deploys your site to GitHub Pages. See [.github/DEPLOYMENT.md](.github/DEPLOYMENT.md) for setup instructions and troubleshooting.
+### Current Positions
 
-## Running locally
+- **Lab Manager & Research Coordinator** - Trauma and Resilience Lab, UC Irvine
+- **Project Coordinator** - Silver Stress and Coping Lab, UC Irvine  
+- **Junior Research Specialist** - Stress, Coping and Health in Context Lab, UC Irvine
+
+## Site Structure
+
+This site includes:
+- **Publications** - Manuscripts in preparation and published works
+- **Talks & Presentations** - Conference presentations and symposiums
+- **Research** - Detailed lab experience and projects
+- **Portfolio** - Showcase of major research projects
+- **Awards** - Academic honors and research funding
+- **Service** - Crisis counseling and mental health advocacy
+- **CV** - Comprehensive curriculum vitae
+- **Blog** - Updates and news
+
+## Contact
+
+- **Email:** [yuekunc1@uci.edu](mailto:yuekunc1@uci.edu)
+- **LinkedIn:** [linkedin.com/in/yuekun-alice-chen](https://linkedin.com/in/yuekun-alice-chen)
+- **GitHub:** [@alicechen58](https://github.com/alicechen58)
+
+---
+
+## Technical Documentation
+
+### 🚀 Automatic Deployment
+
+This site uses **GitHub Actions** for push-to-publish automation. Every commit to `master` automatically builds and deploys to GitHub Pages. See [.github/DEPLOYMENT.md](.github/DEPLOYMENT.md) for setup instructions and troubleshooting.
+
+### Running Locally
 
 When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
 
@@ -76,96 +103,64 @@ You should now be able to access the website from `localhost:4000`.
 
 If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
 
-# Where Do I Edit Each Thing?
+### Content Editing Guide
 
-This site is built on Jekyll with the academicpages structure. Here's a quick reference guide for where to edit different aspects of your site.
+This site is built on Jekyll with the academicpages structure. Here's a quick reference for editing different sections:
 
-## Site-wide Settings
+#### Site-wide Settings
 
-**`_config.yml`** — Title, tagline, email, description, social links, collections, and other global options.
+- **`_config.yml`** — Title, tagline, email, description, social links, collections, and other global options
+- **`_data/navigation.yml`** — Top navigation menu labels and links
 
-**`_data/navigation.yml`** — Top navigation menu labels and links. Keep all links even if the page is empty.
+#### Home & Profile
 
-## Home & Profile
+- **`_pages/about.md`** — Bio, headshot image path, quick links to CV, email, and socials
+- **`images/HeadShot.jpg`** — Profile photo displayed on site
 
-**`_pages/about.md`** — Bio, headshot image path, quick links to CV, email, and socials.
+#### Publications & Talks
 
-**`images/`** — Headshot and other images used on pages.
+- **`_publications/*.md`** — One file per publication/preprint/in-prep item
+- **`_talks/*.md`** — One file per talk/poster presentation
+- **`markdown_generator/`** — Optional scripts to auto-generate content from TSV
 
-## CV
+#### Research & Portfolio
 
-**`files/alice-chen-cv.pdf`** — Upload your CV PDF here; link to it from About and nav. The repo serves files from `files/`.
+- **`_pages/research.md`** — Overview of research experience
+- **`_portfolio/*.md`** — Detailed project cards for each lab/research experience
 
-## Publications
+#### Other Sections
 
-**`_publications/*.md`** — One file per publication/preprint/in-prep item.
+- **`_teaching/*.md`** — Teaching and mentorship entries
+- **`_posts/YYYY-MM-DD-title.md`** — Blog posts and news updates
+- **`_pages/service.md`** — Service and leadership activities
+- **`_pages/awards.md`** — Honors, awards, and certifications
+- **`_pages/cv.md`** — Online CV (also provide PDF in `files/`)
 
-**`markdown_generator/`** — Optional scripts/TSV to auto-generate publication markdown.
+#### Assets
 
-## Talks & Posters
-
-**`_talks/*.md`** — One file per talk/poster (APS, UROP, etc.).
-
-**`_pages/talks.md`** — List page that renders the collection.
-
-## Research
-
-**`_pages/research.md`** — Overview page describing research experience across labs.
-
-## Teaching
-
-**`_pages/teaching.md`** — Overview page.
-
-**`_teaching/*.md`** — Individual course entries (keep files/pages even if empty for now).
-
-## Portfolio / Projects
-
-**`_portfolio/*.md`** — Cards for projects or labs (e.g., Trauma & Resilience Lab, DAWN study, Silver Lab).
-
-**`_pages/portfolio.md`** — List page.
-
-## Blog / News
-
-**`_posts/YYYY-MM-DD-title.md`** — Blog/news posts. Use this date-filename format for correct sorting.
-
-## Service & Awards
-
-**`_pages/service.md`** — Campus/community roles (WISE, Crisis Text Line, Caring Minds).
-
-**`_pages/awards.md`** — Scholarships, honors, awards. Keep both pages present even if incomplete.
-
-## Assets
-
-**`files/`** — PDFs and other downloadable files.
-
-**`images/`** — All images referenced across pages.
-
-## Keep Everything Visible
-
-Do not delete pages or remove nav items. If a section is not yet populated, leave its page and link intact and add a short placeholder note. This preserves the full structure of the academic portfolio template while you build out content over time.
+- **`files/`** — PDFs (CV, papers, slides) and downloadable files
+- **`images/`** — All images referenced across pages
 
 ---
 
-# Maintenance
+## About This Site
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+This website is built using the [Academic Pages](https://github.com/academicpages/academicpages.github.io) Jekyll template, which is based on the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme.
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+**Technology Stack:**
+- **Framework:** Jekyll static site generator
+- **Hosting:** GitHub Pages
+- **Deployment:** GitHub Actions (automated)
+- **Theme:** Academic Pages template
 
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+**License:** MIT License
 
 ---
+
 <div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
+**Yuekun (Alice) Chen** • [yuekunc1@uci.edu](mailto:yuekunc1@uci.edu) • University of California, Irvine
+
+*Last updated: October 2025*
+
 </div>
