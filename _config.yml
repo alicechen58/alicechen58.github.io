@@ -13,10 +13,10 @@ title                    : "Yuekun (Alice) Chen"
 title_separator          : "-"
 name                     : &name "Yuekun (Alice) Chen"
 description              : &description "Psychological Science & Sociology researcher focused on trauma, resilience, and mental health"
-url                      : https://YuekunChen.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : https://alicechen58.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "YuekunChen/YuekunChen.github.io"
+repository               : "alicechen58/alicechen58.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -48,7 +48,7 @@ author:
   bitbucket        : # Username
   codepen          : # Username
   dribbble         : # Username
-  github           : "YuekunChen"
+  github           : "alicechen58"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 

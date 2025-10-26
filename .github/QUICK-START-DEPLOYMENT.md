@@ -4,7 +4,7 @@
 
 ### 1. Enable GitHub Actions for Pages
 
-Go to: `https://github.com/YuekunChen/YuekunChen.github.io/settings/pages`
+Go to: `https://github.com/alicechen58/alicechen58.github.io/settings/pages`
 
 Change **Source** to: **GitHub Actions** (instead of "Deploy from a branch")
 
@@ -20,10 +20,10 @@ git push origin master
 
 ### 3. Watch It Deploy
 
-1. Go to: `https://github.com/YuekunChen/YuekunChen.github.io/actions`
+1. Go to: `https://github.com/alicechen58/alicechen58.github.io/actions`
 2. See "Build and Deploy to GitHub Pages" running
 3. Wait ~3-5 minutes
-4. Visit: `https://YuekunChen.github.io` ✨
+4. Visit: `https://alicechen58.github.io` ✨
 
 ## 🎯 That's It!
 

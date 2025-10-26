@@ -16,7 +16,7 @@ To enable automatic deployments, you need to configure GitHub Pages in your repo
 
 ### Step 1: Enable GitHub Pages
 
-1. Go to your repository on GitHub: `https://github.com/YuekunChen/YuekunChen.github.io`
+1. Go to your repository on GitHub: `https://github.com/alicechen58/alicechen58.github.io`
 2. Click on **Settings** (top navigation)
 3. Click on **Pages** (left sidebar under "Code and automation")
 4. Under **Build and deployment**:
@@ -39,7 +39,7 @@ git push origin master
 2. You'll see a workflow run called "Build and Deploy to GitHub Pages"
 3. Click on it to see the build progress
 4. Once complete (green checkmark ✓), your site will be live at:
-   - `https://YuekunChen.github.io`
+   - `https://alicechen58.github.io`
 
 ## Workflow File
 
